@@ -3,14 +3,14 @@
 function waitOneSecond(){
     return new Promise ((resolve)=> {
         setTimeout(() => {
-            resolve("Done after one second")            
+            resolve("Done after three second")            
         }, 3000);
     })
 }
 
 async function run() {
     console.log("Start");
-    const result = await waitOneSecond();
+    const result = await waitthreeSecond();
     console.log(result);
     console.log("End")
     }
